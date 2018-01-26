@@ -34,12 +34,12 @@ public class PlayerMovement : MonoBehaviour {
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))  //Right
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))  //Right
         {
             Debug.Log("Right");
             _playerBody.velocity = new Vector2(Speed, _playerBody.velocity.y);
         }
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))  //Left
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))  //Left
         {
             Debug.Log("Left");
             _playerBody.velocity = new Vector2(-Speed, _playerBody.velocity.y);
