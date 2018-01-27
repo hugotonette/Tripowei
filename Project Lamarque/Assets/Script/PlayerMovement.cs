@@ -2,21 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
-    
+public class PlayerMovement : MonoBehaviour
+{
+
     public float Speed = 10f;
     public float JumpForce = 400f;
-    public Collider2D _GroundCheckCollider;
+    public bool CanMoveOnAir = true;
 
     private Rigidbody2D _playerBody;
     private bool _canJump;
-    
 
-    IEnumerator TimeForce(float Time)
-    {
-        GetComponent<Rigidbody>().AddForce(new Vector3(0, Speed, 0));
-        yield return new WaitForSeconds(5);
-    }
 
     private void Awake()
     {
@@ -34,6 +29,7 @@ public class PlayerMovement : MonoBehaviour {
             }
         }
 
+        //Linear Drag (no RigidBody2D define o atrito (tempo q demora pra parar o movimento)
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))  //Right
         {
             Debug.Log("Right");
@@ -45,18 +41,23 @@ public class PlayerMovement : MonoBehaviour {
             _playerBody.velocity = new Vector2(-Speed, _playerBody.velocity.y);
         }
 
+
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Floor"))
+        if (col.gameObject.CompareTag("Floor"))  //Está encostando no chão
+        {
             _canJump = true;
+        }
     }
 
-    private void OnTriggerExit2D(Collider2D col)
+    private void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Floor"))
+        {
             _canJump = false;
+        }
     }
 
 }
