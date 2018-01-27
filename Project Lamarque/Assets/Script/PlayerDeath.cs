@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerDeath : MonoBehaviour
 {
     public float DeathTimer = 10f;
     public GameObject DeadBody;
+
+    private float timer;
 
     IEnumerator TimeToDie(float timer)
     {
@@ -20,6 +23,7 @@ public class PlayerDeath : MonoBehaviour
         if (notDangerZone)
             InstantiateDeadBody();
         GameObject.Find("GameManager").GetComponent<PlayerSpawn>().GenerationCount++;
+        GameObject.Find("GameManager").GetComponent<LiveTimerSlider>().RestartTimer();
         Destroy(gameObject);
     }
 
