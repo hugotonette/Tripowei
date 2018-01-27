@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerDeath : MonoBehaviour
 {
@@ -12,6 +11,12 @@ public class PlayerDeath : MonoBehaviour
         Debug.Log("Start");
         yield return new WaitForSeconds(timer);
         Debug.Log("Death");
+        Death();
+    }
+
+    public void Death()
+    {
+        GameObject.Find("GameManager").GetComponent<PlayerSpawn>().GenerationCount++; 
         Destroy(this.gameObject);
     }
 
@@ -20,8 +25,10 @@ public class PlayerDeath : MonoBehaviour
         StartCoroutine(TimeToDie(DeathTimer));
     }
 
-    private void Update()
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log(Mathf.Round(DeathTimer - Time.time));
+        if (col.gameObject.CompareTag("Enemy"))
+            Death();
     }
+
 }

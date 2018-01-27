@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_canJump)
         {
-            if (Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.UpArrow))  //Jump
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))  //Jump
             {
                 Debug.Log("jump");
                 _playerBody.AddForce(new Vector2(0f, JumpForce));
