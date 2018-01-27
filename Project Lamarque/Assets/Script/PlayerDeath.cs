@@ -24,6 +24,7 @@ public class PlayerDeath : MonoBehaviour
             InstantiateDeadBody();
         GameObject.Find("GameManager").GetComponent<PlayerSpawn>().GenerationCount++;
         GameObject.Find("GameManager").GetComponent<LiveTimerSlider>().RestartTimer();
+        FindObjectOfType<CameraManager>().Shake();
         Destroy(gameObject);
     }
 
