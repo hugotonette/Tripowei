@@ -9,6 +9,7 @@ TagManager:
   - Item
   - DangerZone
   - Fire
+  - Flammable
   layers:
   - Default
   - TransparentFX

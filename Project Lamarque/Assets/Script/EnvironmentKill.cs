@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvironmentKill : MonoBehaviour {
+public class EnvironmentKill : MonoBehaviour
+{
 
     public void Death(GameObject ThingToDestroy)
     {
