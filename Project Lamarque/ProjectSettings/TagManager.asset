@@ -7,6 +7,9 @@ TagManager:
   - Floor
   - Enemy
   - Item
+  - DangerZone
+  - Fire
+  - Flammable
   layers:
   - Default
   - TransparentFX

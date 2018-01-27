@@ -82,20 +82,20 @@ public class PlayerMovement : MonoBehaviour
         _playerBody.velocity = new Vector2(currentSpeedX, currentSpeedY);
     }
 
-//    private void OnCollisionEnter2D(Collision2D col)
-//    {
-//        if (col.gameObject.CompareTag("Floor"))  //Está encostando no chão
-//        {
-//            _onGround = true;
-//        }
-//    }
-//
-//    private void OnCollisionExit2D(Collision2D col)
-//    {
-//        if (col.gameObject.CompareTag("Floor"))
-//        {
-//            _onGround = false;
-//        }
-//    }
+    //    private void OnCollisionEnter2D(Collision2D col)
+    //    {
+    //        if (col.gameObject.CompareTag("Floor"))  //Está encostando no chão
+    //        {
+    //            _onGround = true;
+    //        }
+    //    }
+    //
+    //    private void OnCollisionExit2D(Collision2D col)
+    //    {
+    //        if (col.gameObject.CompareTag("Floor"))
+    //        {
+    //            _onGround = false;
+    //        }
+    //    }
 
 }

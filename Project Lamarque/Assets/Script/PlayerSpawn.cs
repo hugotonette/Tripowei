@@ -11,6 +11,7 @@ public class PlayerSpawn : MonoBehaviour
     public Text GenerationText;
     public GameObject PlayerPrefab;
     public Transform NestTransform;
+    private GameObject Egg;
 
     private void Awake()
     {
@@ -22,9 +23,18 @@ public class PlayerSpawn : MonoBehaviour
         if (!GameObject.FindGameObjectWithTag("Player"))
         {
             GenerationText.text = ("Generation: " + GenerationCount);
-            Instantiate<GameObject>(PlayerPrefab, new Vector3(NestTransform.position.x,
-                NestTransform.position.y, 0),
+            if (!GameObject.FindGameObjectWithTag("Egg"))
+            {
+                Instantiate<GameObject>(PlayerPrefab, new Vector3(NestTransform.position.x, NestTransform.position.y, 0),
                 new Quaternion(0, 0, 0, 0));
+            }
+            else
+            {
+                Egg = GameObject.FindGameObjectWithTag("Egg");
+                Instantiate<GameObject>(PlayerPrefab, new Vector3(Egg.transform.position.x, Egg.transform.position.y, 0),
+                new Quaternion(0, 0, 0, 0));
+                Destroy(Egg);
+            }
         }
     }
 

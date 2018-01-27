@@ -16,8 +16,8 @@ public class PlayerDeath : MonoBehaviour
 
     public void Death()
     {
-        GameObject.Find("GameManager").GetComponent<PlayerSpawn>().GenerationCount++; 
-        Destroy(this.gameObject);
+        GameObject.Find("GameManager").GetComponent<PlayerSpawn>().GenerationCount++;
+        Destroy(gameObject);
     }
 
     private void Awake()
@@ -31,4 +31,9 @@ public class PlayerDeath : MonoBehaviour
             Death();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("DangerZone"))
+            Death();
+    }
 }
