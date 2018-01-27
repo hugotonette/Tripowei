@@ -12,13 +12,13 @@ public class LiveTimerSlider : MonoBehaviour
 
     private void Awake()
     {
-        _time = Time.time;
+        _time = 0;
         _maxTime = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>().DeathTimer;
     }
 
     private void Update()
     {
-        _time = Time.time;
+        _time += Time.deltaTime;
         LiveTimer.value = CalculateTime(_maxTime, _maxTime - _time);
     }
 
@@ -29,6 +29,6 @@ public class LiveTimerSlider : MonoBehaviour
 
     public void RestartTimer()
     {
-        _time = Time.time;
+        _time = 0;
     }
 }
