@@ -11,7 +11,7 @@ public class PlayerSpawn : MonoBehaviour
     public Text GenerationText;
     public GameObject PlayerPrefab;
     public Transform NestTransform;
-    private GameObject Egg;
+    public GameObject Egg;
 
     private void Awake()
     {
