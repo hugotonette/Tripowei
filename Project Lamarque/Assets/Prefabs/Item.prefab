@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerXOffset: 0
-  PlayerYOffset: 1
+  PlayerYOffset: 1.8
 --- !u!212 &212594070580341664
 SpriteRenderer:
   m_ObjectHideFlags: 1

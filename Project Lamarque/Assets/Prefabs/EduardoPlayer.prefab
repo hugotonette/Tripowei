@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathTimer: 10
+  DeadBody: {fileID: 1139502099125748, guid: 56c72e3dc63084c4d9b1243c113b68f7, type: 2}
 --- !u!114 &114693830323314266
 MonoBehaviour:
   m_ObjectHideFlags: 1
