@@ -138,7 +138,11 @@ GameObject:
   - component: {fileID: 58393162468381688}
   - component: {fileID: 114532752955986614}
   - component: {fileID: 114854977554657858}
+<<<<<<< HEAD
   - component: {fileID: 95253685170203828}
+=======
+  - component: {fileID: 114700021641726636}
+>>>>>>> a5e1f95734155c207ec612c3d4c0d03dde9010a0
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1516,6 +1520,19 @@ MonoBehaviour:
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4803487577058700}
   m_AttachedIK: {fileID: 0}
+--- !u!114 &114700021641726636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1240871457411190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c896378b1ce4a4597e8ec0640558e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinSpeedToThrow: 0.1
+  ThrowForce: 10
 --- !u!114 &114779307238453038
 MonoBehaviour:
   m_ObjectHideFlags: 1
