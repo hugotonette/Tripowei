@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4296790644029676}
   - component: {fileID: 212280725399185364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4535695509545278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1905707527
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 7ca431c636986554f8fcd0096508950b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
