@@ -17,7 +17,7 @@ public class PlayerDeath : MonoBehaviour
     public void Death()
     {
         GameObject.Find("GameManager").GetComponent<PlayerSpawn>().GenerationCount++; 
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 
     private void Awake()

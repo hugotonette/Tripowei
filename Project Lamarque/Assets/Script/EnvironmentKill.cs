@@ -6,7 +6,6 @@ public class EnvironmentKill : MonoBehaviour {
 
     public void Death(GameObject ThingToDestroy)
     {
-        Debug.Log("bam");
         Destroy(ThingToDestroy);
     }
 
