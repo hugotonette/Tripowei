@@ -287,7 +287,7 @@ MonoBehaviour:
   PlayerPrefab: {fileID: 1240871457411190, guid: a4c13d997f9e2f146932ae1edc382c8e,
     type: 2}
   NestTransform: {fileID: 2122559550}
-  Egg: {fileID: 1706251757345534, guid: f482e3b694a5e1a46a4e87dca4845335, type: 2}
+  Egg: {fileID: 0}
 --- !u!4 &186853662
 Transform:
   m_ObjectHideFlags: 0
