@@ -15,4 +15,10 @@ public class NextSceneScript : MonoBehaviour
             else
                 SceneManager.LoadScene(NextScene);
     }
+
+    public void NextSceneButton(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
 }

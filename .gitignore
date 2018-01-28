@@ -34,3 +34,6 @@ sysinfo.txt
 *.unitypackage
 Project Lamarque/Library/
 Project Lamarque/.vs/
+Project Lamarque/Assets/Prefabs/Player.prefab
+Project Lamarque/Assets/Prefabs/Enemy 1.prefab
+Project Lamarque/Assets/Prefabs/Egg.prefab
