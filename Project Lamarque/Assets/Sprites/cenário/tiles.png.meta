@@ -1,15 +1,18 @@
 fileFormatVersion: 2
-guid: 1385270dad313be40a39b92b2cebc9ab
-timeCreated: 1517071975
+guid: 7322986c84a2af5498fa80b3440982fb
+timeCreated: 1517161807
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: groundTiles_0
-    21300002: groundTiles_1
-    21300004: groundTiles_2
-    21300006: groundTiles_3
-    21300008: groundTiles_4
-    21300010: groundTiles_5
+    21300000: tiles_0
+    21300002: tiles_1
+    21300004: tiles_2
+    21300006: tiles_3
+    21300008: tiles_4
+    21300010: tiles_5
+    21300012: tiles_6
+    21300014: tiles_7
+    21300016: tiles_8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -106,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: groundTiles_0
+      name: tiles_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 987.3334
-        width: 494
-        height: 493.66666
+        y: 0
+        width: 439.22223
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,13 +123,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: groundTiles_1
+      name: tiles_1
       rect:
         serializedVersion: 2
-        x: 494
-        y: 987.3334
-        width: 494
-        height: 493.66666
+        x: 439
+        y: 0
+        width: 439.22223
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,13 +137,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: groundTiles_2
+      name: tiles_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 494.33334
-        width: 494
-        height: 493.66666
+        x: 878
+        y: 0
+        width: 439.22223
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,13 +151,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: groundTiles_3
+      name: tiles_3
       rect:
         serializedVersion: 2
-        x: 494
-        y: 494.33334
-        width: 494
-        height: 493.66666
+        x: 1317
+        y: 0
+        width: 439.22223
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,13 +165,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: groundTiles_4
+      name: tiles_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1.3333435
-        width: 494
-        height: 493.66666
+        x: 1756
+        y: 0
+        width: 439.22223
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,13 +179,55 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: groundTiles_5
+      name: tiles_5
       rect:
         serializedVersion: 2
-        x: 494
-        y: 1.3333435
-        width: 494
-        height: 493.66666
+        x: 2195
+        y: 0
+        width: 439.22223
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_6
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 0
+        width: 439.22223
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_7
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 0
+        width: 439.22223
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_8
+      rect:
+        serializedVersion: 2
+        x: 3512
+        y: 0
+        width: 439.22223
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
