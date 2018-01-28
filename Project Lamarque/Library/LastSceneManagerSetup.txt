@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/L02.unity
+- path: C:/Users/hugot/Documents/Rio PUC Games/ProjectSPA/PROJECT SPA/Assets/Scenes/SplashScreen.unity
   isLoaded: 1
   isActive: 1
