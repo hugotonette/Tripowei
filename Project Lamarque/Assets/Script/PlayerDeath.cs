@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class PlayerDeath : MonoBehaviour
 {
     public float DeathTimer = 10f;
     public GameObject DeadBody;
 
     private float timer;
+
+    Animator _animator;
 
     IEnumerator TimeToDie(float timer)
     {
@@ -29,6 +32,13 @@ public class PlayerDeath : MonoBehaviour
         if (cameraManager != null)
             cameraManager.Shake();
 
+        _animator.SetTrigger("Dead");
+
+        Destroy(gameObject);
+    }
+
+    void DestroyItself()
+    {
         Destroy(gameObject);
     }
 
@@ -39,6 +49,7 @@ public class PlayerDeath : MonoBehaviour
 
     private void Awake()
     {
+        _animator = GetComponent<Animator>();
         StartCoroutine(TimeToDie(DeathTimer));
     }
 
