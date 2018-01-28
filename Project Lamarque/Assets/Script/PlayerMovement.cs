@@ -13,13 +13,17 @@ public class PlayerMovement : MonoBehaviour
 
     Animator _animator;
 
-    bool _isFacingRight = false;    
+    public AudioSource JumpAudio;
+
+    bool _isFacingRight = false;
 
     private Rigidbody2D _playerBody;
     private bool _onGround;
 
     float _axisHorizontal;
     bool _kJumpDown, _kJumpRelease;
+
+    private bool _canPlayJump = false;
 
     private void Awake()
     {
@@ -70,12 +74,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Nothing...
+        if (_canPlayJump)
+            PlayAudio(JumpAudio);
     }
 
     void Flip()
     {
-        _isFacingRight = !  _isFacingRight;
+        _isFacingRight = !_isFacingRight;
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
@@ -104,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
             if (_kJumpDown)  //Jump
             {
                 Debug.Log("jump");
+                _canPlayJump = true;
                 currentSpeedY += JumpSpeed;
             }
         }
@@ -116,20 +122,9 @@ public class PlayerMovement : MonoBehaviour
         _playerBody.velocity = new Vector2(currentSpeedX, currentSpeedY);
     }
 
-    //    private void OnCollisionEnter2D(Collision2D col)
-    //    {
-    //        if (col.gameObject.CompareTag("Floor"))  //Está encostando no chão
-    //        {
-    //            _onGround = true;
-    //        }
-    //    }
-    //
-    //    private void OnCollisionExit2D(Collision2D col)
-    //    {
-    //        if (col.gameObject.CompareTag("Floor"))
-    //        {
-    //            _onGround = false;
-    //        }
-    //    }
-
+    private void PlayAudio(AudioSource audioToPlay)
+    {
+        audioToPlay.Play();
+        _canPlayJump = false;
+    }
 }
