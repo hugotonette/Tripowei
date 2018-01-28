@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
     public Collider2D groundCheckCol;
     public LayerMask whatIsSolid;
 
+    Animator _animator;
+
+    bool _isFacingRight = false;    
+
     private Rigidbody2D _playerBody;
     private bool _onGround;
 
@@ -23,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
         _kJumpDown = false;
         _kJumpRelease = false;
+
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -38,11 +44,39 @@ public class PlayerMovement : MonoBehaviour
         // As our movement don't apply forces, we can apply it during the Update. 
         // Applying the movement during the Fixed Update can result in losing Inputs.
         ApplyMovement();
+
+        if (Mathf.Abs(_playerBody.velocity.x) > 0.01f)
+            _animator.SetBool("IsMoving", true);
+        else
+            _animator.SetBool("IsMoving", false);
+
+        if (_onGround)
+        {
+            _animator.SetBool("IsJumping", false);
+        }
+        else
+            _animator.SetBool("IsJumping", true);
+
+        if (_playerBody.velocity.x > 0.01 && !_isFacingRight)
+        {
+            Flip();
+        }
+        else if (_playerBody.velocity.x < -0.01 && _isFacingRight)
+        {
+            Flip();
+        }
+
     }
 
     private void FixedUpdate()
     {
         //Nothing...
+    }
+
+    void Flip()
+    {
+        _isFacingRight = !  _isFacingRight;
+        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
 
