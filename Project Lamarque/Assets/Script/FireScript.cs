@@ -5,18 +5,23 @@ using UnityEngine;
 public class FireScript : MonoBehaviour
 {
     public GameObject FirePrefab;
+    public float BurnTime;
 
     private GameObject _newFire;
     private bool _canFire = true;
+
+    IEnumerator Burning(float time, GameObject objToBurn)
+    {
+        InstantiateFire(objToBurn);
+        yield return new WaitForSeconds(time);
+        Destroy(objToBurn);
+    }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Flammable"))
         {
-            _newFire = Instantiate<GameObject>(FirePrefab, GameObject.FindGameObjectWithTag("Player").transform);
-            _newFire.transform.parent = col.gameObject.transform;
-            _newFire.transform.localPosition = new Vector3(0, 0, 0);
-            Destroy(col.gameObject);
+            Burning(BurnTime, col.gameObject);
         }
         if (col.gameObject.CompareTag("Player"))
         {
@@ -25,10 +30,11 @@ public class FireScript : MonoBehaviour
                 _canFire = true;
                 if (_canFire)
                 {
+                    _canFire = false;
                     _newFire = Instantiate<GameObject>(FirePrefab, GameObject.FindGameObjectWithTag("Player").transform);
                     _newFire.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
                     _newFire.transform.localPosition = new Vector3(0, 0, 0);
-                    _canFire = false;
+                    //_canFire = false;
                 }
             }
             else
@@ -36,4 +42,10 @@ public class FireScript : MonoBehaviour
         }
     }
 
+    private void InstantiateFire(GameObject objToBurn)
+    {
+        _newFire = Instantiate<GameObject>(FirePrefab, GameObject.FindGameObjectWithTag("Player").transform);
+        _newFire.transform.parent  = objToBurn.transform;
+        _newFire.transform.localPosition = new Vector3(0, 0, 0);
+    }
 }
