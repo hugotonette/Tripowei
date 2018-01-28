@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerDeath : MonoBehaviour
 {
     public float DeathTimer = 10f;
-    public GameObject DeadBody;
+    //public GameObject DeadBody;
 
     private float timer;
 
@@ -23,8 +23,10 @@ public class PlayerDeath : MonoBehaviour
 
     public void Death(bool notDangerZone)
     {
+        /*
         if (notDangerZone)
             InstantiateDeadBody();
+            */
         GameObject.Find("GameManager").GetComponent<PlayerSpawn>().GenerationCount++;
         GameObject.Find("GameManager").GetComponent<LiveTimerSlider>().RestartTimer();
 
@@ -42,10 +44,12 @@ public class PlayerDeath : MonoBehaviour
         Destroy(gameObject);
     }
 
+    /*
     public void InstantiateDeadBody()
     {
         Instantiate<GameObject>(DeadBody, new Vector3(transform.position.x, transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
     }
+    */
 
     private void Awake()
     {
