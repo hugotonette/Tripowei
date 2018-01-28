@@ -72,7 +72,6 @@ GameObject:
   - component: {fileID: 114889976772526990}
   - component: {fileID: 95434170400030314}
   - component: {fileID: 58024631032563922}
-  - component: {fileID: 70670822623794738}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Enemy
@@ -710,7 +709,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1107612114614888}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.26, y: -5.08, z: 0}
+  m_LocalPosition: {x: 2.26, y: -2.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4382455118444260}
@@ -970,21 +969,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5
---- !u!70 &70670822623794738
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1107612114614888}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.83, y: -0.29}
-  m_Size: {x: 1, y: 2.12}
-  m_Direction: 0
 --- !u!95 &95434170400030314
 Animator:
   serializedVersion: 3
@@ -1096,7 +1080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.8493104
+  m_Length: 0.84931016
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4900994265298220}
   m_AttachedIK: {fileID: 0}
@@ -1112,7 +1096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.5300004
+  m_Length: 1.5300002
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4525932053834462}
   m_AttachedIK: {fileID: 0}
@@ -1150,7 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.99153984
+  m_Length: 0.9915401
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4935346035163740}
   m_AttachedIK: {fileID: 0}
@@ -1240,7 +1224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.8000004
+  m_Length: 0.8000002
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4625587312912590}
   m_AttachedIK: {fileID: 0}
@@ -1344,7 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.7999999
+  m_Length: 0.80000025
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4831648606520414}
   m_AttachedIK: {fileID: 0}
@@ -1391,7 +1375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad327758f0d528d44982903a896cac6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 7
   FieldOfView: {fileID: 58299936114052422}
   state: 0
 --- !u!114 &114903118180366756
@@ -1438,7 +1422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.0000006
+  m_Length: 1.0000007
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4508782296158284}
   m_AttachedIK: {fileID: 0}
