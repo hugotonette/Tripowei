@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 50088593962628738}
   m_Layer: 8
   m_Name: Tora
-  m_TagString: Untagged
+  m_TagString: Flammable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
