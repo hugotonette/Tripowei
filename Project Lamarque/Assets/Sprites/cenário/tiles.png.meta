@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7322986c84a2af5498fa80b3440982fb
-timeCreated: 1517161807
+timeCreated: 1517163869
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -114,7 +114,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -126,9 +126,9 @@ TextureImporter:
       name: tiles_1
       rect:
         serializedVersion: 2
-        x: 439
+        x: 494
         y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       name: tiles_2
       rect:
         serializedVersion: 2
-        x: 878
+        x: 988
         y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,9 +154,9 @@ TextureImporter:
       name: tiles_3
       rect:
         serializedVersion: 2
-        x: 1317
+        x: 1482
         y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -168,9 +168,9 @@ TextureImporter:
       name: tiles_4
       rect:
         serializedVersion: 2
-        x: 1756
+        x: 1976
         y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,9 +182,9 @@ TextureImporter:
       name: tiles_5
       rect:
         serializedVersion: 2
-        x: 2195
+        x: 2470
         y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,9 +196,9 @@ TextureImporter:
       name: tiles_6
       rect:
         serializedVersion: 2
-        x: 2634
+        x: 2964
         y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -210,23 +210,9 @@ TextureImporter:
       name: tiles_7
       rect:
         serializedVersion: 2
-        x: 3073
+        x: 3458
         y: 0
-        width: 439.22223
-        height: 495
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: tiles_8
-      rect:
-        serializedVersion: 2
-        x: 3512
-        y: 0
-        width: 439.22223
+        width: 494.125
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
