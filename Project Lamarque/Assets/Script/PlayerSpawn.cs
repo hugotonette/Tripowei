@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerSpawn : MonoBehaviour
 {
     [System.NonSerialized]
-    public int GenerationCount = 0;
+    public int GenerationCount = 1;
 
     public Text GenerationText;
     public GameObject PlayerPrefab;
