@@ -1134,9 +1134,9 @@ Tilemap:
     e33: 1
   m_TileRefreshArray:
   - serializedVersion: 1
-    m_DirtyIndex: 0
+    m_DirtyIndex: 1
   - serializedVersion: 1
-    m_DirtyIndex: 0
+    m_DirtyIndex: 1
 --- !u!1 &1408937436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,6 +1603,16 @@ Prefab:
     - target: {fileID: 4985667415541972, guid: a4c13d997f9e2f146932ae1edc382c8e, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.01903389
+      objectReference: {fileID: 0}
+    - target: {fileID: 114643492388466226, guid: a4c13d997f9e2f146932ae1edc382c8e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137818098439185386, guid: a4c13d997f9e2f146932ae1edc382c8e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4c13d997f9e2f146932ae1edc382c8e, type: 2}
