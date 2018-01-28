@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 222688105314319338}
   - component: {fileID: 114891670315750870}
   m_Layer: 5
-  m_Name: Text
+  m_Name: LiveTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
