@@ -23,7 +23,15 @@ public class PlayerSpawn : MonoBehaviour
         if (!GameObject.FindGameObjectWithTag("Player"))
         {
             GenerationText.text = ("Generation: " + GenerationCount);
-            if (!GameObject.FindGameObjectWithTag("Egg"))
+
+            EggPrefab = GameObject.FindGameObjectWithTag("Egg");
+            Instantiate<GameObject>(PlayerPrefab, new Vector3(EggPrefab.transform.position.x, EggPrefab.transform.position.y, 0),
+                new Quaternion(0, 0, 0, 0));
+
+            EggPrefab.transform.position = NestTransform.transform.position;
+
+
+            /*if (!GameObject.FindGameObjectWithTag("Egg"))
             {
                 Instantiate<GameObject>(PlayerPrefab, new Vector3(NestTransform.position.x, NestTransform.position.y, 0),
                 new Quaternion(0, 0, 0, 0));
@@ -34,7 +42,7 @@ public class PlayerSpawn : MonoBehaviour
                 Instantiate<GameObject>(PlayerPrefab, new Vector3(EggPrefab.transform.position.x, EggPrefab.transform.position.y, 0),
                 new Quaternion(0, 0, 0, 0));
                 Destroy(EggPrefab);
-            }
+            }*/
         }
     }
 }
