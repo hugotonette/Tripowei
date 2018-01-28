@@ -7,9 +7,7 @@ using UnityEngine.UI;
 public class ChangeScene : MonoBehaviour
 {
     public string NextSceneName;
-    public float Timer = 1f;
-
-    public Image img;
+    public float Timer = 5f;
 
     IEnumerator WaitToChange()
     {
