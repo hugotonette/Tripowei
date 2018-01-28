@@ -19,7 +19,7 @@ public class LiveTimerSlider : MonoBehaviour
     private void Update()
     {
         _time += Time.deltaTime;
-        LiveTimer.value = CalculateTime(_maxTime, _maxTime - _time);
+        //LiveTimer.value = CalculateTime(_maxTime, _maxTime - _time);
     }
 
     private float CalculateTime(float maxTime, float currentTime)

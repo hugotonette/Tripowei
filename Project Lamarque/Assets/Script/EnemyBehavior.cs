@@ -53,6 +53,11 @@ public class EnemyBehavior : MonoBehaviour
         NextState();
     }
 
+    private void Update()
+    {
+        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+    }
+
     private void FixedUpdate()
     {
         if (state == State.Idle)
@@ -63,7 +68,7 @@ public class EnemyBehavior : MonoBehaviour
         {
             transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
             transform.Rotate(new Vector3(0, -90, 0), Space.Self);
-
+            
             transform.Translate(new Vector3(Speed * Time.deltaTime, 0, 0));
         }
     }
