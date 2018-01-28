@@ -80,4 +80,4 @@ MonoBehaviour:
   PlayerPrefab: {fileID: 1564664865506654, guid: a4c13d997f9e2f146932ae1edc382c8e,
     type: 2}
   NestTransform: {fileID: 0}
-  EggPrefab: {fileID: 1706251757345534, guid: f482e3b694a5e1a46a4e87dca4845335, type: 2}
+  EggPrefab: {fileID: 1254178592320306, guid: 0da24705293761549ae2102bb360f019, type: 2}
