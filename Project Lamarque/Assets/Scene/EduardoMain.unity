@@ -500,6 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c982750580e5df148acf8dbf88b3d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirePrefab: {fileID: 0}
 --- !u!1 &186853660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1384,31 @@ Prefab:
         type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 137534220148767662, guid: a4c13d997f9e2f146932ae1edc382c8e,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 137765509270607670, guid: a4c13d997f9e2f146932ae1edc382c8e,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 137038412368572578, guid: a4c13d997f9e2f146932ae1edc382c8e,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 137527093785890746, guid: a4c13d997f9e2f146932ae1edc382c8e,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114797618978376474, guid: a4c13d997f9e2f146932ae1edc382c8e,
+        type: 2}
+      propertyPath: DeathTimer
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4c13d997f9e2f146932ae1edc382c8e, type: 2}
@@ -2791,7 +2817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2122559550
 Transform:
   m_ObjectHideFlags: 0
