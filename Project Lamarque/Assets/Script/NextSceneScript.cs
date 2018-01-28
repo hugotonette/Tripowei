@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextSceneScript : MonoBehaviour
 {
     public string NextScene;
-
+    
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
