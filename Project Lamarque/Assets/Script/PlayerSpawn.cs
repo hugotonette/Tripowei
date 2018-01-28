@@ -15,13 +15,17 @@ public class PlayerSpawn : MonoBehaviour
 
     private void Awake()
     {
-        GenerationText.text = ("Generation: " + GenerationCount);
+        GenerationText.text = ("Marvin da " + GenerationCount + "° Geração");
     }
 
     private void Update()
     {
         if (!GameObject.FindGameObjectWithTag("Player"))
         {
+<<<<<<< HEAD
+            GenerationText.text = ("Marvin da " + GenerationCount + "° Geração");
+            if (!GameObject.FindGameObjectWithTag("Egg"))
+=======
             GenerationText.text = ("Generation: " + GenerationCount);
 
             EggPrefab = GameObject.FindGameObjectWithTag("Egg");
@@ -32,6 +36,7 @@ public class PlayerSpawn : MonoBehaviour
 
 
             /*if (!GameObject.FindGameObjectWithTag("Egg"))
+>>>>>>> ec12e5587173394168845b7b9f0cee14a85fa06a
             {
                 Instantiate<GameObject>(PlayerPrefab, new Vector3(NestTransform.position.x, NestTransform.position.y, 0),
                 new Quaternion(0, 0, 0, 0));
