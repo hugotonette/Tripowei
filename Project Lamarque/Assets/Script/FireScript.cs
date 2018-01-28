@@ -11,15 +11,15 @@ public class FireScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Flammable") && !col.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Flammable"))
         {
-            //Animation Here
+            _newFire = Instantiate<GameObject>(FirePrefab, GameObject.FindGameObjectWithTag("Player").transform);
+            _newFire.transform.parent = col.gameObject.transform;
+            _newFire.transform.localPosition = new Vector3(0, 0, 0);
             Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("Player"))
         {
-            //Player on fire animation
-
             if (!GameObject.FindGameObjectWithTag("Player").transform.Find("Fire(Clone)"))
             {
                 _canFire = true;
@@ -27,6 +27,7 @@ public class FireScript : MonoBehaviour
                 {
                     _newFire = Instantiate<GameObject>(FirePrefab, GameObject.FindGameObjectWithTag("Player").transform);
                     _newFire.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+                    _newFire.transform.localPosition = new Vector3(0, 0, 0);
                     _canFire = false;
                 }
             }

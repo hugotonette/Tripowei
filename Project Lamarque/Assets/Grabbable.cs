@@ -8,11 +8,11 @@ public class Grabbable : MonoBehaviour
     public float PlayerXOffset;
     public float PlayerYOffset;
 
-    Rigidbody2D _rb;
-    GrabSkill _holder ;
+    private Rigidbody2D _rb;
+    private GrabSkill _holder ;
 
-    Vector2 _startPos;
-    float _startRot;
+    private Vector2 _startPos;
+    private float _startRot;
 
     // Use this for initialization
     void Start()
