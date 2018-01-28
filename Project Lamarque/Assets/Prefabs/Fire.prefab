@@ -9,44 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1109645342611184}
+  m_RootGameObject: {fileID: 1201051669130854}
   m_IsPrefabParent: 1
---- !u!1 &1109645342611184
+--- !u!1 &1201051669130854
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4055608099298022}
-  - component: {fileID: 114390949523323520}
-  - component: {fileID: 58103887632560168}
+  - component: {fileID: 4064294527868210}
+  - component: {fileID: 58028351352605652}
+  - component: {fileID: 114318148287797704}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4055608099298022
+--- !u!4 &4064294527868210
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1109645342611184}
+  m_GameObject: {fileID: 1201051669130854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.63388914, y: 5.227662, z: 0.25585938}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58103887632560168
+--- !u!58 &58028351352605652
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1109645342611184}
+  m_GameObject: {fileID: 1201051669130854}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -56,15 +56,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &114390949523323520
+--- !u!114 &114318148287797704
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1109645342611184}
+  m_GameObject: {fileID: 1201051669130854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c982750580e5df148acf8dbf88b3d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirePrefab: {fileID: 0}
+  FirePrefab: {fileID: 1201051669130854}
