@@ -54,3 +54,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: inimigo
+    uniqueID: 2845267069
+    locked: 0
