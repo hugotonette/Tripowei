@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsSolid;
 
     Animator _animator;
-
     bool _isFacingRight = false;    
 
     private Rigidbody2D _playerBody;
@@ -57,13 +56,13 @@ public class PlayerMovement : MonoBehaviour
         else
             _animator.SetBool("IsJumping", true);
 
-        if (_playerBody.velocity.x > 0.01 && !_isFacingRight)
+        if (_playerBody.velocity.x > 3f && !_isFacingRight)
         {
-            Flip();
+            Flip(true);
         }
-        else if (_playerBody.velocity.x < -0.01 && _isFacingRight)
+        else if (_playerBody.velocity.x < -3f && _isFacingRight)
         {
-            Flip();
+            Flip(false);
         }
 
     }
@@ -73,10 +72,14 @@ public class PlayerMovement : MonoBehaviour
         //Nothing...
     }
 
-    void Flip()
+    void Flip(bool faceRight)
     {
-        _isFacingRight = !  _isFacingRight;
-        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        _isFacingRight = faceRight;
+
+        if (_isFacingRight)
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        else
+            transform.localScale = new Vector3(1f, 1f, 1f);
     }
 
 
@@ -103,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (_kJumpDown)  //Jump
             {
-                Debug.Log("jump");
+                //Debug.Log("jump");
                 currentSpeedY += JumpSpeed;
             }
         }
