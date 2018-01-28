@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LiveTimerSlider : MonoBehaviour
 {
-    public Slider LiveTimer;
+    public Text LiveTimer;
 
     private float _maxTime;
     private float _time;
@@ -19,7 +19,7 @@ public class LiveTimerSlider : MonoBehaviour
     private void Update()
     {
         _time += Time.deltaTime;
-        //LiveTimer.value = CalculateTime(_maxTime, _maxTime - _time);
+        LiveTimer.text = ("Tempo de vida: ") + (Mathf.Round(_maxTime - _time)).ToString();
     }
 
     private float CalculateTime(float maxTime, float currentTime)
